@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --blue-primary: hsl(205, 78%, 60%);
+}
+
+p {
+    letter-spacing: 1px;
+    color: hsl(210, 22%, 49%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h4, h5, h6 {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    background-color: hsl(210, 36%, 96%);
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+
+.container {
+    width: 80vw;
+    max-width: 620px;
+}
+
+.title {
+    /* margin-bottom: 5rem; */
+    font-weight: 400;
+    text-align: center;
+    color:hsl(209, 61%, 16%);
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 4rem;
+}
+
+.underline {
+    background-color: var(--blue-primary);
+    height: 4px;
+    width: 5rem;
+    margin: 0.5rem auto;
+    /* padding: 0; */
+}
+
+.profile {
+    text-transform: capitalize;
+    color: var(--blue-primary);
+}
+
+.review {
+    background: white;
+    background: white;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 2rem 1rem 0.5rem;
+}
+
+.review:hover {
+    transition: all 0.3s linear;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    margin-bottom: 1rem;
+}
+
+.image {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.carousel {
+    margin: 0 1rem;
+    display: inline;
+    border: 0;
+    background-color: transparent;
+    color: hsl(191, 71%, 80%);
+    font-size: 1.25rem;
+    transition: all 0.3s linear;
+}
+
+.carousel:hover {
+    color: var(--blue-primary);
+    transition: all 0.3s linear;
+}
+
+.random {
+    padding: 0.3rem;
+    background-color: hsl(191, 55%, 94%);
+    border-radius: 4px;
+    margin: 1rem auto;
+    color: var(--blue-primary);
+    transition: all 0.3s linear;
+}   
+
+.random:hover {
+    transition: all 0.3s linear;
+    background-color: var(--blue-primary);
+    color: hsl(191, 55%, 94%);
+}
